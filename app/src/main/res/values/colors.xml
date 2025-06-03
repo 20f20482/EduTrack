@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_primary">#1565C0</color>
+    <color name="my_primary_dark">#003c8f</color>
+    <color name="my_accent">#03A9F4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#EEEEEE</color>
+    <color name="gray_dark">#757575</color>
+    <color name="my_secondary">#8AB6E7</color>
+    <color name="green">#2F8945</color>
+
+
+</resources>
+
+

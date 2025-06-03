@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:alpha="0.7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <ImageView
+            android:id="@+id/lig1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/todo9"
+            android:src="@drawable/loim"/>
+
+    </LinearLayout>
+
+
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    app:cardCornerRadius="28dp"
+    android:layout_marginBottom="-20dp"
+    >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="28dp"
+          android:background="@color/white">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/logt1482"
+              android:text="@string/login"
+              android:textColor="@color/my_primary"
+              android:textSize="32sp"
+              android:textStyle="bold"
+              android:layout_gravity="center"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/logsign482"
+              android:alpha="0.7"
+              android:text="@string/sign_in_to_contnue"
+              android:textSize="20sp"
+              android:layout_gravity="center"/>
+
+          <View
+              android:layout_width="wrap_content"
+              android:layout_height="30dp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/logemail482"
+              android:alpha="0.7"
+              android:text="@string/email_address"
+              android:textSize="15sp"/>
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/lodedemail482"
+              android:autofillHints=""
+              android:drawableEnd="@drawable/done_ic"
+              android:inputType="textEmailAddress"
+              tools:ignore="LabelFor" />
+
+          <View
+              android:layout_width="wrap_content"
+              android:layout_height="30dp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:alpha="0.7"
+              android:id="@+id/logpass482"
+              android:text="@string/password1"
+              android:textSize="15sp"/>
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:autofillHints=""
+              android:drawableEnd="@drawable/pass_ic"
+              android:id="@+id/logedpass482"
+              android:inputType="textPassword"
+              tools:ignore="LabelFor" />
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <CheckBox
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/remember_me"
+                  android:textSize="15sp"
+                  android:layout_centerVertical="true"
+                  android:alpha="0.7"
+                  tools:ignore="RelativeOverlap" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/i_forget_my_password"
+                  android:layout_alignParentEnd="true"
+                  android:layout_centerVertical="true"
+                  android:textSize="15sp"
+                  tools:ignore="RelativeOverlap" />
+
+
+          </RelativeLayout>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp" />
+
+
+          <Button
+              android:id="@+id/logbut482"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:background="@color/my_primary"
+              android:textColor="@color/white"
+              android:text="Login"
+              android:textSize="20sp"
+              android:clickable="true"
+              android:focusable="true"
+              tools:ignore="HardcodedText" />
+
+
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp" />
+
+
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/logregis482"
+              android:text="@string/register3"
+              android:textSize="20sp"
+              android:background="@color/my_primary"
+              android:textColor="@color/white"
+              android:gravity="center"/>
+
+
+      </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_courses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6FA"
+    android:padding="8dp"
+    tools:context=".CoursesActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar482"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:title="@string/educational_courses"
+        android:titleTextColor="#FFFFFF" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCourses482"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bottomToolbar482"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+</LinearLayout>

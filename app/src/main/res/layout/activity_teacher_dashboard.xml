@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/teacherDashboardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8FB"
+    tools:context=".TeacherDashboardActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbarTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1976D2"
+        android:title="@string/teacher_dashboard"
+        android:titleTextColor="#FFFFFF"
+        android:elevation="4dp" />
+
+
+    <TextView
+        android:id="@+id/tvWelcomeTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topToolbarTeacher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/welcome_teacher"
+        android:textColor="#1E1E1E"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!--Card: Manage Courses -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardManageCourses"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvWelcomeTeacher"
+        android:layout_margin="16dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_courses"
+                android:contentDescription="icon" />
+
+            <TextView
+                android:id="@+id/textManageCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textManageCourses"
+                android:layout_marginStart="56dp"
+                android:text="@string/manage_courses1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:layout_below="@id/textManageCourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/add_update_or_delete_courses"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card: View Students -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewStudents"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardManageCourses"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_students"
+                android:contentDescription="icon" />
+
+            <TextView
+                android:id="@+id/textViewStudents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:text="@string/view_students"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_below="@id/textViewStudents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/view_student_progress_and_quiz_results"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card: Chat -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardChat"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardViewStudents"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_chat"
+                android:contentDescription="icon" />
+
+            <TextView
+                android:id="@+id/ChatS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:text="Chat"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_below="@id/ChatS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="4dp"
+                android:text="Chat with students"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card: Logout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLogout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardChat"
+        android:layout_margin="16dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_logout"
+                android:contentDescription="icon" />
+
+            <TextView
+                android:id="@+id/textLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:text="@string/logout3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_below="@id/textLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/sign_out_from_your_account"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

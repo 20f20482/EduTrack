@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8FB"
+    tools:context=".AdminDashboardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbarAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1976D2"
+        android:title="Admin Dashboard"
+        android:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvWelcomeAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topToolbarAdmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Welcome, Admin"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnViewUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcomeAdmin"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="View Users" />
+
+    <Button
+        android:id="@+id/btnUploadCorAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewUsers"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Upload courses" />
+
+    <Button
+        android:id="@+id/btnLogoutAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUploadCorAdmin"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Logout" />
+</RelativeLayout>

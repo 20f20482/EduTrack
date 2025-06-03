@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_pathway_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6FA"
+    android:padding="16dp"
+    tools:context=".PathwayDetailActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvPathwayTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pathway Title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/tvDescriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description details here..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginTop="4dp" />
+
+
+            <TextView
+                android:id="@+id/tvSkillsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skills details here..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginTop="4dp" />
+
+
+            <TextView
+                android:id="@+id/tvJobsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jobs:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvJobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jobs details here..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginTop="4dp" />
+
+
+            <TextView
+                android:id="@+id/tvSubjectsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subjects:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tvSubjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subjects details here..."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
