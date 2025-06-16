@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(v -> loginUser());
 
         registerBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, SignUpActivity.class)));
+
     }
 
     private void loginUser() {

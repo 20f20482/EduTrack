@@ -41,6 +41,7 @@ public class ViewStudentsActivity extends AppCompatActivity {
         usersRef = FirebaseDatabase.getInstance().getReference("Users");
 
         fetchStudentsFromFirebase();
+
     }
 
     private void fetchStudentsFromFirebase() {

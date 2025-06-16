@@ -109,6 +109,7 @@ public class SettingsActivity extends AppCompatActivity {
                 Toast.makeText(SettingsActivity.this, "User email not found.", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     private void loadSettings() {

@@ -41,7 +41,7 @@ public class PathwaysActivity extends AppCompatActivity {
                 "Discover software development, AI, and data science careers.",
                 R.drawable.ic_it,
                 "Study of computation, programming, and data systems.",
-                "Java, Python, Algorithms, Databases",
+                "Java, Algorithms, Python, Databases",
                 "Software Developer, Data Scientist, AI Engineer",
                 "Data Structures, Operating Systems, Web Development");
 
@@ -49,25 +49,26 @@ public class PathwaysActivity extends AppCompatActivity {
                 "Pursue careers in healthcare, surgery, and research.",
                 R.drawable.ic_medical,
                 "Medical science focused on diagnosis and treatment of diseases.",
-                "Anatomy, Critical Thinking, Empathy",
+                "Critical Thinking,Empathy , Anatomy",
                 "Doctor, Surgeon, Medical Researcher",
-                "Physiology, Biochemistry, Pathology, Pharmacology");
+                "Physiology, Pharmacology, Pathology,Biochemistry ");
 
         addPathway("Business Pathway",
                 "Develop skills in management, marketing, and finance.",
                 R.drawable.ic_business1,
                 "Focus on business operations, management, and strategy.",
-                "Leadership, Communication, Financial Analysis",
-                "Business Manager, Marketing Specialist, HR Officer",
-                "Economics, Accounting, Marketing, Management");
+                "Financial Analysis,Leadership , Communication",
+                "Marketing Specialist,ManagerHR Officer , Business ",
+                "Accounting,Management , Economics,Marketing ");
 
         addPathway("Education Pathway",
-                "Build a future as a teacher or education specialist.",
+                "A Future as an Education Specialist and Teacher.",
                 R.drawable.ic_education,
-                "Study of teaching methods and learning processes.",
-                "Communication, Planning, Assessment",
-                "Teacher, Educational Consultant, Principal",
-                "Pedagogy, Curriculum Design, Psychology");
+                "Discovering teaching and learning methods.",
+                "Planning,Assessment , Communication",
+                "Educational Consultant, Principal, Teacher",
+                "Curriculum Design,Psychology ,Pedagogy ");
+
     }
 
     private void addPathway(String title, String subtitle, int imageRes,

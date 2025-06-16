@@ -45,6 +45,7 @@ public class CoursesActivity extends AppCompatActivity implements CourseAdapter.
         recyclerViewCourses482.setAdapter(adapter482);
 
         loadCoursesFromFirebase();
+
     }
 
     private void loadCoursesFromFirebase() {

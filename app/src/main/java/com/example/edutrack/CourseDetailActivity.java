@@ -48,5 +48,6 @@ public class CourseDetailActivity extends AppCompatActivity {
 
         topToolbar482.setNavigationIcon(R.drawable.ic_back);
         topToolbar482.setNavigationOnClickListener(v -> finish());
+
     }
 }

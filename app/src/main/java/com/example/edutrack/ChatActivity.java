@@ -54,6 +54,7 @@ public class ChatActivity extends AppCompatActivity {
                 etMessage482.setText("");
             }
         });
+
     }
 
     private void sendMessage(String content) {

@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
-    @SuppressLint("NonConstantResourceId")
+    @SuppressLint({"NonConstantResourceId", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,26 +30,27 @@ public class HomeActivity extends AppCompatActivity {
         if (currentUser == null) {
             startActivity(new Intent(HomeActivity.this, MainActivity.class));
             finish();
-            return;
+            return ;
         }
 
-        Toolbar topToolbar = findViewById(R.id.topToolbar);
-        Toolbar bottomToolbar = findViewById(R.id.bottomToolbar);
-        SearchView searchView = findViewById(R.id.searchView);
+        Toolbar topToolbar482 = findViewById(R.id.topToolbar);
+        Toolbar bottomToolbar482 = findViewById(R.id.bottomToolbar);
+        SearchView searchView482 = findViewById(R.id.searchView482);
 
-        CardView cardPathways = findViewById(R.id.cardPathways);
-        CardView cardQuiz = findViewById(R.id.cardQuiz);
-        CardView cardCourses = findViewById(R.id.cardCourses);
-        CardView cardProfile = findViewById(R.id.cardProfile);
-        CardView cardChat = findViewById(R.id.cardChat);
-        CardView cardLogout = findViewById(R.id.cardLogout);
+        CardView cardPathways = findViewById(R.id.cardPathways482);
+        CardView cardQuiz482 = findViewById(R.id.cardQuiz482);
+        CardView cardCourses482 = findViewById(R.id.cardCourses482);
+        CardView cardProfile482 = findViewById(R.id.cardProfile482);
+        CardView cardChat482 = findViewById(R.id.cardChat482);
+        CardView cardJob482= findViewById(R.id.cardJob482);
 
 
-        setSupportActionBar(topToolbar);
 
-        bottomToolbar.inflateMenu(R.menu.toolbarmenu);
+        setSupportActionBar(topToolbar482);
 
-        bottomToolbar.setOnMenuItemClickListener(item -> {
+        bottomToolbar482.inflateMenu(R.menu.toolbarmenu);
+
+        bottomToolbar482.setOnMenuItemClickListener(item -> {
             int id = item.getItemId();
 
             if (id == R.id.menu_pathways) {
@@ -81,19 +82,22 @@ public class HomeActivity extends AppCompatActivity {
 
         cardPathways.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, PathwaysActivity.class)));
 
-        cardQuiz.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, QuizActivity.class)));
+        cardQuiz482.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, QuizActivity.class)));
 
-        cardCourses.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, CoursesActivity.class)));
+        cardCourses482.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, CoursesActivity.class)));
 
-        cardProfile.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, ProfileActivity.class)));
+        cardProfile482.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, ProfileActivity.class)));
 
-        cardChat.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, ChatActivity.class)));
-        cardLogout.setOnClickListener(v -> logoutUser());
+        cardChat482.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, ChatActivity.class)));
 
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        cardJob482.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, JobsActivity.class)));
+
+
+
+        searchView482.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Toast.makeText(HomeActivity.this, "Searching for: " + query, Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomeActivity.this, "Searching here: " + query, Toast.LENGTH_SHORT).show();
                 return false;
             }
 
@@ -102,6 +106,7 @@ public class HomeActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 
     private void logoutUser() {

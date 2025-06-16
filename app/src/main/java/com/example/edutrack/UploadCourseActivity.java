@@ -52,6 +52,7 @@ public class UploadCourseActivity extends AppCompatActivity {
 
         buttonUpload.setOnClickListener(view -> uploadOrUpdateCourse());
         buttonDelete.setOnClickListener(view -> showDeleteConfirmationDialog());
+
     }
 
     private void uploadOrUpdateCourse() {

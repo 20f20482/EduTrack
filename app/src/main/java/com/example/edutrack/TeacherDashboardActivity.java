@@ -29,7 +29,7 @@ public class TeacherDashboardActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference("users");
+        DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference("Users");
 
 
         tvWelcomeTeacher = findViewById(R.id.tvWelcomeTeacher);
@@ -84,5 +84,6 @@ public class TeacherDashboardActivity extends AppCompatActivity {
             startActivity(new Intent(this, MainActivity.class));
             finish();
         });
+
     }
 }

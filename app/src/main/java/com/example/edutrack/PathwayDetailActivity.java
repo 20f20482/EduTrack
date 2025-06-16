@@ -40,5 +40,6 @@ public class PathwayDetailActivity extends AppCompatActivity {
 
 
         topToolbar482.setTitle(title);
+
     }
 }
