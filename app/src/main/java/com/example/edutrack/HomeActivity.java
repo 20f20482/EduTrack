@@ -33,8 +33,8 @@ public class HomeActivity extends AppCompatActivity {
             return ;
         }
 
-        Toolbar topToolbar482 = findViewById(R.id.topToolbar);
-        Toolbar bottomToolbar482 = findViewById(R.id.bottomToolbar);
+        Toolbar topToolbar482 = findViewById(R.id.topToolbar482);
+        Toolbar bottomToolbar482 = findViewById(R.id.bottomToolbar482);
         SearchView searchView482 = findViewById(R.id.searchView482);
 
         CardView cardPathways = findViewById(R.id.cardPathways482);
